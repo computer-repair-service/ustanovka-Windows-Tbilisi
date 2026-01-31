@@ -739,3 +739,77 @@ footer {
         font-size: 1.5rem;
     }
 }
+/* Мобильная панель контактов */
+.mobile-contact-bar {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  padding: 8px 12px;
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+  z-index: 9999;
+  gap: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.m-btn {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 12px 8px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.2s;
+  border: none;
+}
+
+.m-btn:active { transform: scale(0.95); }
+.m-phone { background: #28a745; color: white; }
+.m-whatsapp { background: #25d366; color: white; }
+.m-telegram { background: #0088cc; color: white; }
+
+.desktop-only {
+  display: inline-flex;
+}
+
+@media (max-width: 768px) {
+  .mobile-contact-bar { 
+    display: flex; 
+  }
+  body { 
+    padding-bottom: 80px !important; 
+  }
+  .desktop-only {
+    display: none;
+  }
+  .districts-tags a.district-tag {
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+
+/* Оптимизация для CLS */
+img {
+  height: auto;
+  max-width: 100%;
+}
+
+/* Улучшение доступности */
+a:focus, button:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+
+/* Микроразметка price */
+[itemprop="price"] {
+  font-weight: 900;
+  color: var(--primary);
+}
