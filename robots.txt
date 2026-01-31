@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://computer-repair-service.github.io/ustanovka-Windows-Tbilisi/sitemap.xml
