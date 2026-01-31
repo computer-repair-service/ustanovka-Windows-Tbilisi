@@ -753,6 +753,20 @@ footer {
   border-top: 1px solid #e0e0e0;
   box-sizing: border-box;
 }
+/* Мобильная панель контактов — исправленная версия */
+.mobile-contact-bar {
+  display: none; /* По умолчанию скрыта, показывается только на мобильных */
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #ffffff;
+  padding: 12px 16px 20px 16px; /* Увеличен нижний padding для безопасной зоны iPhone */
+  box-shadow: 0 -4px 20px rgba(0,0,0,0.15);
+  z-index: 9999;
+  border-top: 1px solid #e0e0e0;
+  box-sizing: border-box;
+}
 
 /* Контейнер для кнопок — flexbox */
 .mobile-contact-bar {
